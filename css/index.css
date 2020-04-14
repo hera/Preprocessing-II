@@ -139,6 +139,12 @@ body {
 body {
   font-size: 1.5rem;
 }
+a {
+  color: #212529;
+}
+a:hover {
+  color: #17A2B8;
+}
 h1,
 h2,
 h3,
