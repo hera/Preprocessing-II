@@ -12,6 +12,11 @@
     margin-top: @basic-gutter;
     margin-top: @basic-gutter;
 
+    @media @desktop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     h1 {
         margin-bottom: @basic-gutter;
     }
@@ -22,6 +27,14 @@
         display: flex;
         justify-content: space-around;
         margin-bottom: @basic-gutter;
+
+        @media @desktop {
+            width: auto;
+            justify-content: flex-end;
+            a {
+                margin-left: @basic-gutter;
+            }
+        }
 
         a {
             text-decoration: none;
