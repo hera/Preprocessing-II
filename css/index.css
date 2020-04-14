@@ -260,6 +260,23 @@ img {
   justify-content: space-between;
   flex-direction: column;
 }
+@media (min-width: 500px) {
+  .home .content-section {
+    flex-direction: row;
+  }
+}
+@media (min-width: 500px) {
+  .home .content-section .text-content {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 500px) {
+  .home .content-section .img-content {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
 }
@@ -279,4 +296,9 @@ img {
 }
 .home .content-pick .destination {
   margin-bottom: 3rem;
+}
+@media (min-width: 500px) {
+  #adventure .text-content {
+    order: 2;
+  }
 }

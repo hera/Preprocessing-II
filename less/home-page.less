@@ -15,12 +15,23 @@
         justify-content: space-between;
         flex-direction: column;
      
-        
+        @media @desktop {
+            flex-direction: row;
+        }
+
         .text-content {
+            @media @desktop {
+                width: 45%;
+                margin-right: 5%;
+            }
+            
         }
 
         .img-content {
-
+            @media @desktop {
+                width: 45%;
+                margin-right: 5%;
+            }
             img {
                 border-radius: 10px;
             }
@@ -47,3 +58,11 @@
         }
     }
 }// home
+
+#adventure {
+    .text-content {
+        @media @desktop {
+            order: 2;
+        }
+    }
+}
