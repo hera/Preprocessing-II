@@ -60,8 +60,18 @@
         display: flex;
         flex-direction: column;
 
+        @media @desktop {
+            flex-direction: row;
+            width: 100%;
+            align-content: center;
+        }
+
         .destination {
             margin-bottom: @basic-gutter;
+
+            @media @desktop {
+                padding-right: @basic-gutter;
+            }
         }
     }
 }// home

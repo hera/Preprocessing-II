@@ -301,8 +301,20 @@ img {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 500px) {
+  .home .content-pick {
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+  }
+}
 .home .content-pick .destination {
   margin-bottom: 3rem;
+}
+@media (min-width: 500px) {
+  .home .content-pick .destination {
+    padding-right: 3rem;
+  }
 }
 #adventure {
   border-bottom: 2px dashed #C0C0C0;
