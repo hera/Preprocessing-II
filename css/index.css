@@ -176,6 +176,11 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.header-wrapper {
+  border-bottom: 2px dashed #C0C0C0;
 }
 .header {
   display: flex;
@@ -191,6 +196,7 @@ img {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 3rem;
 }
 .header nav a {
   text-decoration: none;
