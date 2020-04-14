@@ -238,7 +238,7 @@ img {
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -246,6 +246,10 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .welcome {
+  padding-bottom: 3rem;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .welcome img {
   margin-bottom: 3rem;
