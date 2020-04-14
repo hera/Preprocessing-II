@@ -40,6 +40,13 @@
 
     .content-destination {
         .dashed-border(bottom);
+
+        @media @desktop {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         img {
             border-radius: 10px;
             margin-bottom: @basic-gutter;
@@ -60,6 +67,8 @@
 }// home
 
 #adventure {
+    .dashed-border(bottom);
+    padding-bottom: @basic-gutter;
     .text-content {
         @media @desktop {
             order: 2;

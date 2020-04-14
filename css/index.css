@@ -283,6 +283,13 @@ img {
 .home .content-destination {
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (min-width: 500px) {
+  .home .content-destination {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
   margin-bottom: 3rem;
@@ -296,6 +303,10 @@ img {
 }
 .home .content-pick .destination {
   margin-bottom: 3rem;
+}
+#adventure {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 3rem;
 }
 @media (min-width: 500px) {
   #adventure .text-content {
