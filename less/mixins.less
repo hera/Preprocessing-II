@@ -1,1 +1,9 @@
-// Mixins in here
+
+
+.dashed-border(@location) {
+    border-@{location}: 2px dashed @navigation-border;
+}
+
+.smooth-transition(@property) {
+    transition: @property 0.4s ease;
+}

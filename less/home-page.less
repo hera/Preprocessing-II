@@ -1,61 +1,87 @@
 .home {
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .welcome {
+        padding-bottom: @basic-gutter;
+        .dashed-border(bottom);
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+        img {
+            margin-bottom: @basic-gutter;
+        }
     }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+    .content-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+     
+        @media @desktop {
+            flex-direction: row;
+        }
 
-      img {
-        border-radius: 10px;
-      }
+        .text-content {
+            @media @desktop {
+                width: 45%;
+                margin-right: 5%;
+            }
+            
+        }
+
+        .img-content {
+            @media @desktop {
+                width: 45%;
+                margin-right: 5%;
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
     }
-  }
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .content-destination {
+        .dashed-border(bottom);
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+        @media @desktop {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-bottom: @basic-gutter;
+        }
     }
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+    .content-pick {
+        padding-top: @basic-gutter;
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        @media @desktop {
+            flex-direction: row;
+            width: 100%;
+            align-content: center;
+        }
+
+        .destination {
+            margin-bottom: @basic-gutter;
+
+            @media @desktop {
+                padding-right: @basic-gutter;
+            }
+        }
     }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-  }
 }// home
+
+#adventure {
+    .dashed-border(bottom);
+    padding-bottom: @basic-gutter;
+    .text-content {
+        @media @desktop {
+            order: 2;
+        }
+    }
+}
